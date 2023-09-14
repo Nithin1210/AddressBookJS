@@ -44,3 +44,4 @@ addressBook.deleteContact("A");
 addressBook.displayContacts();
 
 console.log("Current Available Contact's are : "+addressBook.ContactCount());
+console.log(addressBook.FindDuplicates());

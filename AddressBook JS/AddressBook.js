@@ -62,6 +62,20 @@ class AddressBook {
         const count = this.contacts.length;
         return count;
     }
+
+    FindDuplicates() {
+        let length = this.contacts.length;
+        let newArr=[],index=0;
+        for (let i = 0; i < length - 1; i++) {
+            for (let j = i + 1; j < length; j++) {
+                if (this.contacts[i].firstName === this.contacts[j].firstName) {
+                    newArr[index] = this.contacts[i];
+                    index++;
+                }
+            }
+        }
+        return newArr[0]===undefined;
+    }
 }
 
 module.exports = AddressBook;
