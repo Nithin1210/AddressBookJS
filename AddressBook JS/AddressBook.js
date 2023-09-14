@@ -98,6 +98,14 @@ class AddressBook {
 
         return foundContact;
     }
+    
+    CountContactInStateNCity(state,city) {
+        const foundContact = this.contacts.filter(contact => {
+            return contact.state === state && contact.city === city;
+        });
+
+        return foundContact.length;
+    }
 
 }
 

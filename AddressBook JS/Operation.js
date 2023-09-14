@@ -49,3 +49,4 @@ console.log(addressBook.FindDuplicates());
 console.log(addressBook.findContactByCity("B"));
 console.log(addressBook.findContactByState("C"));
 console.log(addressBook.findContactByStateNCity("C","C"));
+console.log(addressBook.CountContactInStateNCity("C","C"));
