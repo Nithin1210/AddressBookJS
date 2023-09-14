@@ -45,5 +45,7 @@ addressBook.displayContacts();
 
 console.log("Current Available Contact's are : "+addressBook.ContactCount());
 console.log(addressBook.FindDuplicates());
+
 console.log(addressBook.findContactByCity("B"));
 console.log(addressBook.findContactByState("C"));
+console.log(addressBook.findContactByStateNCity("C","C"));
