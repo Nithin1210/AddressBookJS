@@ -121,8 +121,21 @@ class AddressBook {
 
         })
     }
+    sortUsingZip() {
+        this.contacts.sort((a, b) => {
+            const name1 = a.zip;
+            const name2 = b.zip;
+
+            if (name1 < name2)
+                return -1;
+            if (name1 > name2)
+                return 1;
+            else
+                return 0;
+
+        })
 
 
 }
-
+}
 module.exports = AddressBook;

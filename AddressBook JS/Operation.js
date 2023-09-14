@@ -53,5 +53,5 @@ console.log(addressBook.findContactByStateNCity("C","C"));
 console.log(addressBook.CountContactInStateNCity("C","C"));
 
 addressBook.sortUsingFirstName();
-
+addressBook.sortUsingZip();
 addressBook.displayContacts();
