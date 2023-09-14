@@ -36,4 +36,10 @@ if (foundContact) {
 else {
     console.log("Contact not found.");
 }
+console.log("BEFORE DELETING")
 addressBook.displayContacts();
+
+console.log("!!->AFTER DELETING")
+addressBook.deleteContact("A");
+addressBook.displayContacts();
+
