@@ -56,6 +56,12 @@ class AddressBook {
         }
         );
     }
+
+    ContactCount()
+    {
+        const count = this.contacts.length;
+        return count;
+    }
 }
 
 module.exports = AddressBook;
