@@ -76,6 +76,23 @@ class AddressBook {
         }
         return newArr[0]===undefined;
     }
+
+    findContactByCity(city) {
+        const foundContact = this.contacts.filter(contact => {
+            return contact.city === city;
+        });
+
+        return foundContact;
+    }
+    findContactByState(state) {
+        const foundContact = this.contacts.filter(contact => {
+            return contact.state === state;
+        });
+
+        return foundContact;
+    }
+   
+
 }
 
 module.exports = AddressBook;
