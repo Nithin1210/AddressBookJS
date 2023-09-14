@@ -12,6 +12,7 @@ const contact3 = new Contact("C", "C", "3", "C", "C", "33333", "3333333333", "c@
 addressBook.addContact(contact1);
 addressBook.addContact(contact2);
 addressBook.addContact(contact3);
+addressBook.addContact(contact1);
 
 
 const foundContact = addressBook.findContactByName("B", "B");
@@ -50,3 +51,7 @@ console.log(addressBook.findContactByCity("B"));
 console.log(addressBook.findContactByState("C"));
 console.log(addressBook.findContactByStateNCity("C","C"));
 console.log(addressBook.CountContactInStateNCity("C","C"));
+
+addressBook.sortUsingFirstName();
+
+addressBook.displayContacts();
